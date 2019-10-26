@@ -15,6 +15,9 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
+    <link href="style.css" rel="stylesheet" />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -26,9 +29,149 @@
   <body>
     <div style="background-color: #32C787;">
       <div class="container">
-        <h5 class="pt-3 pb-3 mb-0 d-inline-block" style="color: #FFF;">
-          <i class="fas fa-city"></i> Alegeri Europarlamentare 2019
-        </h5>
+        <div class="d-flex justify-content-between align-items-center">
+          <h5
+            class="pt-3 pb-3 mb-0 d-inline-block"
+            style="color: #FFF; cursor: pointer;"
+          >
+            <i class="fas fa-city"></i
+            ><a href="https://prezenta.bec.ro/europarlamentare26052019/"
+              >Alegeri Europarlamentare 2019</a
+            >
+          </h5>
+          <div class="buttons-active">
+            <button type="button" class="btn btn-success">
+              <i class="fas fa-download"></i>DESCARCĂ SCV
+            </button>
+            <button type="button" class="btn btn-success">
+              <i class="fas fa-exchange-alt"></i>REFERENDUM
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row pt-5">
+        <!-- ... first card -->
+        <div class="col-sm-2">
+          <div class="card text-center h-100">
+            <div class="bg-card bg-primary"></div>
+            <div class="card-body">
+              <h5 class="card-title">18.267.732</h5>
+              <p class="card-text">
+                Înscriși pe liste permanente și speciale
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ... second card -->
+        <div class="col-sm-2">
+          <div class="card text-center h-100">
+            <div class="bg-card bg-info"></div>
+            <div class="card-body">
+              <h5 class="card-title">7.716.037</h5>
+              <p class="card-text">
+                Înscriși pe liste permanente și speciale
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ... third card -->
+        <div class="col-sm-2">
+          <div class="card text-center h-100">
+            <div class="bg-card bg-light"></div>
+            <div class="card-body">
+              <h5 class="card-title">1.183.699</h5>
+              <p class="card-text">
+                Votanți pe liste suplimentare
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ... 4th card -->
+        <div class="col-sm-2">
+          <div class="card text-center h-100">
+            <div class="bg-card bg-white"></div>
+            <div class="card-body">
+              <h5 class="card-title">55.223</h5>
+              <p class="card-text">
+                Votanți cu urnă mobilă
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ... 5th card -->
+        <div class="col-sm-2">
+          <div class="card text-center h-100">
+            <div class="bg-card bg-warning"></div>
+            <div class="card-body">
+              <h5 class="card-title">8.954.959</h5>
+              <p class="card-text">
+                Total votanți
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ... 6th card -->
+        <div class="col-sm-2">
+          <div class="card text-center h-100">
+            <div class="bg-card bg-secondary"></div>
+            <div class="card-body">
+              <h5 class="card-title">49,02 %</h5>
+              <p class="card-text">
+                Prezență la urne
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row pt-5">
+        <!-- Judete-->
+        <div class="col-sm-3">
+          <div class="form-group">
+            <label for="judet">JUDEȚE</label>
+            <select class="form-control" id="judet">
+              <option>Alba</option>
+              <option>Argeș</option>
+              <option>Arad</option>
+              <option>Bacău</option>
+              <option>Bihor</option>
+              <option>Cluj</option>
+            </select>
+          </div>
+        </div>
+        <!-- UAT-->
+        <div class="col-sm-3">
+          <div class="form-group">
+            <label for="judet">UAT</label>
+            <select class="form-control" id="uat">
+              <option>ALMAȘU MARE</option>
+              <option>Argeș</option>
+              <option>Arad</option>
+              <option>Bacău</option>
+              <option>Bihor</option>
+              <option>Cluj</option>
+            </select>
+          </div>
+        </div>
+        <!-- Localitate-->
+        <div class="col-sm-3">
+          <div class="form-group">
+            <label for="judet">LOCALITATE</label>
+            <select class="form-control" id="localitate">
+              <option>ALMAȘU DE MIJLOC</option>
+              <option>Argeș</option>
+              <option>Arad</option>
+              <option>Bacău</option>
+              <option>Bihor</option>
+              <option>Cluj</option>
+            </select>
+          </div>
+        </div>
       </div>
     </div>
 
